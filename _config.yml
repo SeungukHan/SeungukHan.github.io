@@ -29,7 +29,7 @@ github_username:  SeungukHan
 linkedin_username: SeungWook.Han
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
