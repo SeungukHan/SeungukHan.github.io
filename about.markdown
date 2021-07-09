@@ -4,4 +4,15 @@ title: About
 permalink: /about/
 ---
 
-TBW
+# Seungwook-Han
+### Interest
+* Language
+  * Java
+  * Scala
+  * Python
+* Platform
+  * Spring
+  * Akka
+* Store
+  * Redis
+  * MySQL

@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Tech
-permalink: /tech/
+layout: post
+title: Book
+permalink: /book/
 ---
 <ul>
   {% for post in site.posts %}
