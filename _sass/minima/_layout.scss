@@ -2,9 +2,8 @@
  * Site header
  */
 .site-header {
-  background-color: $dark-blue;
+  background-color: $bright-blue;
   
-  // min-height: $spacing-unit * 1.865;
   min-height: $spacing-unit * 2;
 
   // Positioning context for the mobile navigation icon
@@ -13,16 +12,19 @@
 
 .site-title {
   @include relative-font-size(1.625);
-  // font-weight: 300;
+  @extend .remove-anchor;
   font-weight: bold;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
   float: left;
+}
 
+.remove-anchor {
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $text-color;
   }
   &:hover {
     text-decoration: none;
@@ -38,38 +40,39 @@
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
+  margin-bottom: 10px;
+  margin-top: 10px;
 
   .nav-trigger {
-      display: none;
+    display: none;
   }
 
   .menu-icon {
     display: none;
   }
 
-  .page-link {
-    color: $text-color;
+  .page-list {
+    list-style: none;
+    float: left;
     font-weight: 500;
-    line-height: $base-line-height;
 
-    &,
-    &:visited {
-    color: $grey-color-dark;
-    }
-    &:hover {
-      text-decoration: none;
-    }
-    &:link {
-      text-decoration: none;
-    }
-    &:active {
-      text-decoration: none;
-    }
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
 
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
+  .page-list-active {
+    @extend .page-list;
+    background-color: $dark-blue;
+    border-radius: 10px;
+
+    font-weight: 800;
+  }
+
+  .page-list-text {
+    @extend .remove-anchor;
+    color: $text-color;
   }
 
   @include media-query($on-palm) {
@@ -138,7 +141,6 @@
 
 .footer-heading {
   @include relative-font-size(1);
-  // margin-bottom: $spacing-unit / 10;
   margin-bottom: 0%;
   text-align: center;
 }
@@ -198,6 +200,80 @@
   }
 }
 
+/**
+ * Utils
+ */
+ .rounded-corners {
+  border-radius: 10%;
+ }
+
+
+/**
+ * About
+ */
+ .about-wrapper {
+    margin-top: $spacing-unit
+ }
+
+ .about-wrapper:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ .about-column {
+   float: left;
+   width: 40%;
+ }
+
+ .about-column-picture {
+   @extend .about-column;
+   width: 45%;
+   padding-right: 5%;
+ }
+
+.about-column-description {
+   @extend .about-column;
+   width: 45%;
+   padding-left: 5%;
+}
+
+
+ .about-introduce {
+   margin-bottom: $spacing-unit;
+ }
+
+ .about-name {
+  font-weight: 1000;
+  font-size: $very-big-font-size;
+ }
+
+ .about-slogan {
+  font-size: $base-font-size;
+  font-style: italic;
+ }
+
+.about-interest {
+  margin-bottom: $spacing-unit;
+}
+
+.about-career {
+  margin-bottom: $spacing-unit;
+}
+
+.about-contact {
+  margin-bottom: $spacing-unit;
+}
+
+.about-section-title {
+  font-weight: 800;
+  font-size: $big-font-size;
+  margin-bottom: $spacing-unit * 0.3;
+}
+
+.about-section-contents {
+  font-size: $base-font-size;
+}
 
 
 /**

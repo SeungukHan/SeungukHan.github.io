@@ -7,6 +7,8 @@ $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
+$big-font-size: $base-font-size * 1.25 !default;
+$very-big-font-size: $big-font-size * 2 !default;
 
 $spacing-unit:     30px !default;
 
@@ -18,7 +20,8 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 40%) !default;
 
-$dark-blue: lighten(#1E90FF, 20%);
+$bright-blue: lighten(#1E90FF, 20%);
+$dark-blue: darken(#1E90FF, 5%);
 
 $table-text-align: left !default;
 
