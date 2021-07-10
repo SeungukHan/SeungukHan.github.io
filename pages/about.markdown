@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
@@ -9,7 +9,7 @@ permalink: /about/
     <img src="/assets/SeungWook.jpeg" class="rounded-corners">
   </div>
   <div class="about-column-description">
-    <div class="about-introduce">
+    <div class="default-p-margin">
       <div class="about-name">
         SEUNG-WOOK HAN
       </div>
@@ -17,7 +17,7 @@ permalink: /about/
         - A software engineer who want to be useful in the world.
       </div>
     </div>
-    <div class="about-interest">
+    <div class="default-p-margin">
       <div class="about-section-title">
         Interest
       </div>
@@ -26,7 +26,7 @@ permalink: /about/
         But I want to give a strength to <strong>Spring, Akka, Redis</strong>.
       </div>
     </div>
-    <div class="about-career">
+    <div class="default-p-margin">
       <div class="about-section-title">
         Career
       </div>
@@ -36,7 +36,7 @@ permalink: /about/
         - LINE Plus Corperation - 2018 ~  <br>
       </div>
     </div>
-    <div class="about-contact">
+    <div class="default-p-margin">
       <div class="about-section-title">
         Contact
       </div>

@@ -1,0 +1,35 @@
+@import "utility";
+
+.outter {
+  font-size: $base-font-size;
+  font-weight: 500;
+  text-align: center;
+
+  line-height: 200%;
+  width: fit-content;
+
+  border-radius: 10%;
+
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.Design {
+    @extend .outter;
+    background-color: #f3c0f3;
+    color: #5e5e5e;
+}
+
+.Effective {
+    @extend .outter;
+    background-color: #ffdd99;
+    color: #5e5e5e;
+}
+
+.Spring {
+    @extend .outter;
+    background-color: #65dfae;
+    color: #5e5e5e;
+}

@@ -1,0 +1,23 @@
+.default-p-margin {
+    margin-bottom: $spacing-unit;
+}
+
+.rounded-corners {
+    border-radius: 10%;
+}
+
+.remove-anchor {
+    &,
+    &:visited {
+      color: $text-color;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &:link {
+      text-decoration: none;
+    }
+    &:active {
+      text-decoration: none;
+    }
+  }

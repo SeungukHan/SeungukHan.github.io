@@ -1,3 +1,5 @@
+@import "utility";
+
 /**
  * Site header
  */
@@ -21,21 +23,7 @@
   float: left;
 }
 
-.remove-anchor {
-  &,
-  &:visited {
-    color: $text-color;
-  }
-  &:hover {
-    text-decoration: none;
-  }
-  &:link {
-    text-decoration: none;
-  }
-  &:active {
-    text-decoration: none;
-  }
-}
+
 
 .site-nav {
   float: right;
@@ -200,12 +188,6 @@
   }
 }
 
-/**
- * Utils
- */
- .rounded-corners {
-  border-radius: 10%;
- }
 
 
 /**
@@ -238,11 +220,6 @@
    padding-left: 5%;
 }
 
-
- .about-introduce {
-   margin-bottom: $spacing-unit;
- }
-
  .about-name {
   font-weight: 1000;
   font-size: $very-big-font-size;
@@ -253,18 +230,6 @@
   font-style: italic;
  }
 
-.about-interest {
-  margin-bottom: $spacing-unit;
-}
-
-.about-career {
-  margin-bottom: $spacing-unit;
-}
-
-.about-contact {
-  margin-bottom: $spacing-unit;
-}
-
 .about-section-title {
   font-weight: 800;
   font-size: $big-font-size;
@@ -273,6 +238,77 @@
 
 .about-section-contents {
   font-size: $base-font-size;
+}
+
+
+/**
+ * Dashboard
+ */
+ .dashboard-card {
+  position: relative;
+  min-height: 130px;
+  height: 150px;
+  background: #fcfcfc;
+  margin: 20px 0px;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.dashboard-card-shadow:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: inherit;
+  height: inherit;
+  z-index: -2;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.dashboard-card-shadow:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: inherit;
+  height: inherit;
+  z-index: -2;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.card-title-wrapper {
+  float: left;
+  width: 70%;
+}
+
+.card-category-wrapper {
+  margin-left: 10%;
+  width: 20%;
+  float: right;
+  
+}
+
+.card-title {
+  font-size: $big-font-size;
+  font-weight: 800;
+}
+
+.card-date {
+  float: left;
+  color: gray;
+}
+
+.card-category {
+  text-align: center;
 }
 
 

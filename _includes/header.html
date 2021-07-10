@@ -23,17 +23,10 @@
             {%- if my_page.title -%}
             <li class="page-list">
               {%- if my_page.title == page.title -%}
-              <a class="page-list-active page-list-text" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                <a class="page-list-active page-list-text" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
               {%- else -%}
-              <a class="page-list page-list-text" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                <a class="page-list page-list-text" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
               {%- endif -%}
-
-              
-              <!-- {%- if my_page.title == page.title -%}
-                  <a class="page-link-active" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-              {%- else -%}
-                  <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-              {%- endif -%} -->
             </li>
             {%- endif -%}
           {%- endfor -%}
