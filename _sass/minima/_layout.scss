@@ -203,19 +203,14 @@
    clear: both;
  }
 
- .about-column {
-   float: left;
-   width: 40%;
- }
-
  .about-column-picture {
-   @extend .about-column;
+   float: left;
    width: 45%;
    padding-right: 5%;
  }
 
 .about-column-description {
-   @extend .about-column;
+   float: left;
    width: 45%;
    padding-left: 5%;
 }
@@ -299,7 +294,7 @@
 
 .card-title {
   font-size: $big-font-size;
-  font-weight: 800;
+  font-weight: $base-font-weight * 2;
 }
 
 .card-date {
@@ -342,6 +337,11 @@
   color: $grey-color;
 }
 
+.post-date {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
 .post-link {
   display: block;
   @include relative-font-size(1.5);
@@ -353,21 +353,49 @@
  * Posts
  */
 .post-header {
+  margin-top: $spacing-unit * 0.5;
   margin-bottom: $spacing-unit;
+  padding-bottom: $spacing-unit;
+  border-bottom: 1px solid $grey-color-light;
 }
 
 .post-title {
-  @include relative-font-size(2.625);
+  @include relative-font-size(2.75);
   letter-spacing: -1px;
   line-height: 1;
 
   @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
+    @include relative-font-size(2.5);
   }
+}
+
+.post-sub-info {
+  width: 100%;
+  height: $base-font-size * 5;
+}
+
+.post-sub-info-image {
+  width: 8%;
+  float: left;
+  height: $base-font-size * 4;
+}
+
+.post-sub-info-text {
+  width: 92%;
+  float: left;
+  height: $base-font-size * 4;
 }
 
 .post-content {
   margin-bottom: $spacing-unit;
+
+  h1 {
+    @include relative-font-size(2.5);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(2);
+    }
+  }
 
   h2 {
     @include relative-font-size(2);
