@@ -15,21 +15,17 @@ layout: default
     <div class="dashboard-wrapper default-p-margin">
       <div class="dashboard-card-wrapper">
         {% for post in target_posts %}
-            <div class="dashboard-card dashboard-card-shadow">
-              <div class="card-title-wrapper">
-                <div class="card-title">
-                  <a class="remove-anchor" href="{{ post.url }}">{{ post.title }}</a>
-                </div>
-                <div class="card-date">{{ post.date | date: "%b %d %Y" }}</div>
-              </div>
-              <div class="card-category-wrapper">
-                {% for category in post.categories %}
-                  <div class="card-category">
-                    <div class="{{ category }}">{{ category }}</div>
-                  </div>
-                {% endfor %}
-              </div>
+          <div class="dashboard-card dashboard-card-shadow">
+            <div class="card-title">
+              <a class="remove-anchor" href="{{ post.url }}">{{ post.title }}</a>
             </div>
+            <div class="card-date">{{ post.date | date: "%b %d %Y" }}</div>
+            <div class="card-category"> Tags: 
+            {% for category in post.categories %}
+              <a href="" class="tag tag-{{ category }} remove-anchor">{{ category }}</a>
+            {% endfor %}
+            </div>
+          </div>
         {% endfor %}
       </div>
     </div>

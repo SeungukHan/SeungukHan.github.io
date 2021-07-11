@@ -205,14 +205,12 @@
 
  .about-column-picture {
    float: left;
-   width: 45%;
-   padding-right: 5%;
+   width: 30%;
  }
 
 .about-column-description {
    float: left;
-   width: 45%;
-   padding-left: 5%;
+   padding-left: $spacing-unit * 1.5;
 }
 
  .about-name {
@@ -280,30 +278,17 @@
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 }
 
-.card-title-wrapper {
-  float: left;
-  width: 70%;
-}
-
-.card-category-wrapper {
-  margin-left: 10%;
-  width: 20%;
-  float: right;
-  
-}
-
 .card-title {
   font-size: $big-font-size;
   font-weight: $base-font-weight * 2;
 }
 
 .card-date {
-  float: left;
   color: gray;
+  margin-bottom: $spacing-unit * 0.5;
 }
 
 .card-category {
-  text-align: center;
 }
 
 
@@ -375,13 +360,12 @@
 }
 
 .post-sub-info-image {
-  width: 8%;
+  width: 70px;
   float: left;
   height: $base-font-size * 4;
 }
 
 .post-sub-info-text {
-  width: 92%;
   float: left;
   height: $base-font-size * 4;
 }
