@@ -16,9 +16,7 @@ layout: default
       <div class="dashboard-card-wrapper">
         {% for post in target_posts %}
           <div class="dashboard-card dashboard-card-shadow">
-            <div class="card-title">
-              <a class="remove-anchor" href="{{ post.url }}">{{ post.title }}</a>
-            </div>
+            <a class="card-title remove-anchor" href="{{ post.url }}">{{ post.title }}</a>
             <div class="card-date">{{ post.date | date: "%b %d %Y" }}</div>
             <div class="card-category"> Tags: 
             {% for category in post.categories %}

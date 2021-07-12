@@ -322,11 +322,6 @@
   color: $grey-color;
 }
 
-.post-date {
-  font-size: $small-font-size;
-  color: $grey-color;
-}
-
 .post-link {
   display: block;
   @include relative-font-size(1.5);
@@ -354,20 +349,29 @@
   }
 }
 
-.post-sub-info {
+.post-date {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-info {
   width: 100%;
   height: $base-font-size * 5;
 }
 
-.post-sub-info-image {
+.post-info-image {
   width: 70px;
   float: left;
   height: $base-font-size * 4;
 }
 
-.post-sub-info-text {
+.post-info-text {
   float: left;
   height: $base-font-size * 4;
+}
+
+.post-category {
+  margin-top: 3px;
 }
 
 .post-content {
