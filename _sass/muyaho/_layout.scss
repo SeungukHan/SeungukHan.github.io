@@ -233,6 +233,14 @@
   font-size: $base-font-size;
 }
 
+.social-media-item {
+  div + div {
+    margin-left: 5px;
+  }
+  margin-right: 10px;
+  float: left;
+}
+
 
 /**
  * Dashboard
@@ -355,6 +363,7 @@
 }
 
 .post-info {
+  margin-top: $spacing-unit;
   width: 100%;
   height: $base-font-size * 5;
 }

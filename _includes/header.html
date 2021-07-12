@@ -22,9 +22,9 @@
             {%- if dashboard.title -%}
             <li class="page-list">
               {%- if dashboard.title == page.title or dashboard.title == page.type -%}
-                <a class="page-list-active page-list-text" href="{{ dashboard.url | relative_url }}">{{ dashboard.title | escape }}</a>
+                <a class="page-list-active page-list-text" href="{{ dashboard.url | relative_url }}">{{ dashboard.title | capitalize | escape }}</a>
               {%- else -%}
-                <a class="page-list page-list-text" href="{{ dashboard.url | relative_url }}">{{ dashboard.title | escape }}</a>
+                <a class="page-list page-list-text" href="{{ dashboard.url | relative_url }}">{{ dashboard.title | capitalize | escape }}</a>
               {%- endif -%}
             </li>
             {%- endif -%}

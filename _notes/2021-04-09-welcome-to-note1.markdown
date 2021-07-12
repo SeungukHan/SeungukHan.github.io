@@ -1,19 +1,10 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Note1"
 date:   2021-04-09 17:37:07 +0900
-categories: [Effective, Design, Spring]
-author: SeungWook Han
-type: Book
+categories: [Effective]
+type: notes
 ---
-
-# Introduction1
-## Introduction2
-### Introduction3
-### Introduction4
-
-> abcdefgheiKjfdlkjfalsdkfjals
-
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 Jekyll requires blog post files to be named according to the following format:

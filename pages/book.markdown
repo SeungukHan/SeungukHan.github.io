@@ -1,5 +1,5 @@
 ---
 layout: dashboard
-title: Book
-permalink: /book/
+title: books
+permalink: /books/
 ---

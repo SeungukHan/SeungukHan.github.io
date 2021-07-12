@@ -2,14 +2,14 @@
 layout: default
 ---
 <article class="dashboard">
-  {% assign target_posts = site.posts | where: "type", page.title %}
+  {% assign target_posts = site[page.title] | sort: "date" | reverse %}
   {% assign target_posts_size = target_posts | size %}
 
   {% if target_posts_size == 0 %}
     {%- include empty.html -%}
   {% else %}
     {%- if page.title -%}
-      <h1 class="page-heading default-p-margin">{{ page.title }}</h1>
+      <h1 class="page-heading default-p-margin">{{ page.title | capitalize }}</h1>
     {%- endif -%}
 
     <div class="dashboard-wrapper default-p-margin">

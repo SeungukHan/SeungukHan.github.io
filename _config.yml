@@ -9,6 +9,14 @@ twitter_username: seungwook_hahn
 github_username:  SeungukHan
 linkedin_username: seungwook-han-3787481a3
 
+collections:
+  books:
+    output: true
+  notes:
+    output: true
+  blogs:
+    output: true
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

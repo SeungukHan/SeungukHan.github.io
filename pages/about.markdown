@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: about
 permalink: /about/
 ---
 
@@ -31,9 +31,11 @@ permalink: /about/
         Career
       </div>
       <div class="about-section-contents">
-        - Hanyang University (Computer science) - 2016 <br>
-        - Seoul National University (Software) - 2018 <br>
-        - LINE Plus Corperation - 2018 ~  <br>
+      <ul>
+        <li><strong>2012 ~ 2016</strong> - Hanyang University <i>(Bachelor, Computer Science)</i></li>
+        <li><strong>2016 ~ 2018</strong> - Seoul National University <i>(Master, Software Engineering)</i></li>
+        <li><strong>2018 ~ Now&nbsp;</strong> - LINE Plus Corporation <i>(Backend developer)</i></li>
+      </ul>
       </div>
     </div>
     <div class="default-p-margin">
