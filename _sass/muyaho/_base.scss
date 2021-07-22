@@ -15,6 +15,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  // font: $base-font-weight $base-article-font-size $base-font-family;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
@@ -97,6 +98,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
+h4 {
+  margin-top: $base-font-size * 3;
+}
+
+p {
+  // text-indent: $base-font-size;
+}
 
 
 /**
