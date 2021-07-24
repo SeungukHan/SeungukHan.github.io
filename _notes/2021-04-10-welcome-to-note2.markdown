@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Note2"
-date:   2021-04-10 17:37:07 +0900
+date:   2021-04-10
 categories: [Effective]
 type: notes
 ---

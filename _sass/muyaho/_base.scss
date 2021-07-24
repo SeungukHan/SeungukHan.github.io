@@ -107,19 +107,40 @@ p {
 }
 
 
+.link-reset {
+  color: inherit;
+  background-color: inherit;
+  
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+
+  padding-right: 0px;
+  padding-left: 0px;
+  border-radius: 0px;
+}
+
 /**
  * Links
  */
 a {
-  color: $brand-color;
+  color: rgb(99, 110, 209);
+  background-color: rgb(209, 242, 252);
+  
+  font-size: $base-font-size;
+  font-weight: $base-font-weight * 1.1;
+
+  padding-right: 7px;
+  padding-left: 7px;
+  border-radius: 5px;
+  
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    // color: darken($brand-color, 15%);
   }
 
   &:hover {
-    color: $text-color;
+    // color: $text-color;
     text-decoration: underline;
   }
 
@@ -150,23 +171,29 @@ blockquote {
 }
 
 
+/**
+ * Code word
+ */
+ code {
+  @include relative-font-size(0.9375);
+  color: rgb(223, 79, 187);
+  background-color: rgb(255, 232, 249);
+  font-weight: $base-font-weight * 1.1;
+
+  padding-right: 7px;
+  padding-left: 7px;
+  border-radius: 5px;
+ }
+
 
 /**
- * Code formatting
+ * Code box
  */
-pre,
-code {
+pre {
   @include relative-font-size(0.9375);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #eef;
-}
-
-code {
-  padding: 1px 5px;
-}
-
-pre {
   padding: 8px 12px;
   overflow-x: auto;
 
@@ -174,6 +201,9 @@ pre {
     border: 0;
     padding-right: 0;
     padding-left: 0;
+
+    color: inherit;
+    background-color: inherit;
   }
 }
 

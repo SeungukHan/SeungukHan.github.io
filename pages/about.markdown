@@ -22,7 +22,7 @@ permalink: /about/
         Interest
       </div>
       <div class="about-section-contents">
-        All backend software used often by many people. <br>
+        All backend softwares used often by many people. <br>
         But I want to give a strength to <strong>Spring, Akka, Redis</strong>.
       </div>
     </div>

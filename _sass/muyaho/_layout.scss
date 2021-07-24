@@ -5,27 +5,32 @@
  */
 .site-header {
   background-color: $grey-color-light;  
-  min-height: $spacing-unit * 2;
+  min-height: $spacing-unit * 2.5;
 
   // Positioning context for the mobile navigation icon
   position: relative;
 }
 
-.site-title {
-  @include relative-font-size(1.625);
-  @extend .remove-anchor;
-  font-weight: bold;
+.site-title-wrapper {
   line-height: $base-line-height * $base-font-size * 2;
-  letter-spacing: -1px;
-  margin-top: 10px;
+  margin-top: $spacing-unit * 0.4;
   padding-top: 2px;
   float: left;
+}
+
+.site-title {
+  @include relative-font-size(2.5);
+  @extend .link-reset;
+  @extend .remove-anchor;
+  font-family: 'Caveat', cursive;
+  font-weight: bold;
+  letter-spacing: -1px;
 }
 
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2;
-  margin-top: 10px;
+  margin-top: $spacing-unit * 0.5;
   padding-top: 15px;
 
   .nav-trigger {
@@ -50,7 +55,6 @@
   .page-list-active {
     @extend .page-list;
     background-color: $background-color;
-    // border-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
@@ -59,6 +63,7 @@
 
   .page-list-text {
     @extend .remove-anchor;
+    @extend.link-reset;
     color: $text-color;
   }
 
@@ -234,10 +239,14 @@
 
 .social-media-item {
   div + div {
-    margin-left: 5px;
+    margin-left: 1px;
   }
-  margin-right: 10px;
+  margin-right: 20px;
   float: left;
+
+  > a {
+    @extend.link-reset;
+  }
 }
 
 
@@ -246,15 +255,15 @@
  */
  .dashboard-card {
   position: relative;
-  min-height: 130px;
-  height: 150px;
+  height: 110px;
   background: #fcfcfc;
   margin: 20px 0px;
-  box-sizing: border-box;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
   padding-top: 2%;
   padding-bottom: 2%;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.13);
 }
 
 .dashboard-card-shadow:before {
@@ -286,16 +295,24 @@
 }
 
 .card-title {
+  @extend.link-reset;
   font-size: $big-font-size;
   font-weight: $base-font-weight * 2;
 }
 
-.card-date {
-  color: gray;
+.card-sub-wrapper {
+  margin-top: $spacing-unit * 0.2;
   margin-bottom: $spacing-unit * 0.5;
 }
 
+.card-date {
+  color: gray;
+  width: 120px;
+  float: left;
+}
+
 .card-category {
+  float: left;
 }
 
 
