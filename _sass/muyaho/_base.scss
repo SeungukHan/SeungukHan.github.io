@@ -89,8 +89,6 @@ li {
   }
 }
 
-
-
 /**
  * Headings
  */
@@ -98,12 +96,42 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
-h4 {
-  margin-top: $base-font-size * 3;
+// h4 {
+//   margin-top: $base-font-size * 3;
+// }
+
+.post-content>h1,
+.post-content>h2 {
+  margin-top: $spacing-unit * 2;
 }
 
-p {
-  // text-indent: $base-font-size;
+.post-content>h1,
+.post-content>h2,
+.post-content>h3,
+.post-content>h4,
+.post-content>h5,
+.post-content>h6 {
+  font-family: 'Sunflower', sans-serif;
+}
+
+.post-content>h1 {
+}
+
+.post-content>h2 {
+}
+
+.post-content>h3 {
+  display: inline;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  background-color: $grey-color-light;
+}
+
+
+
+.post-content>p {
+  text-indent: $base-font-size;
+  font-size: $base-font-size * 1.15;
 }
 
 
@@ -158,6 +186,8 @@ a {
  * Blockquotes
  */
 blockquote {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;

@@ -65,6 +65,7 @@
     @extend .remove-anchor;
     @extend.link-reset;
     color: $text-color;
+    font-family: 'Sunflower', sans-serif;
   }
 
   @include media-query($on-palm) {
@@ -296,8 +297,9 @@
 
 .card-title {
   @extend.link-reset;
-  font-size: $big-font-size;
-  font-weight: $base-font-weight * 2;
+  font-size: $big-font-size * 1;
+  font-weight: $base-font-weight * 1;
+  font-family: 'Sunflower', sans-serif;
 }
 
 .card-sub-wrapper {
@@ -309,10 +311,12 @@
   color: gray;
   width: 120px;
   float: left;
+  font-family: 'Do Hyeon', sans-serif;
 }
 
 .card-category {
   float: left;
+  font-family: 'Do Hyeon', sans-serif;
 }
 
 
@@ -365,8 +369,11 @@
 
 .post-title {
   @include relative-font-size(2.75);
+  margin-top: $spacing-unit;
   letter-spacing: -1px;
   line-height: 1;
+  font-family: 'Sunflower', sans-serif;
+  font-weight: 100;
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.5);
